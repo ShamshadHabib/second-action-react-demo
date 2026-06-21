@@ -3,8 +3,13 @@ name: output context github
 on: workflow_dispatch
 
 jobs:
-  info:
+  githubinfo:
     runs-on: ubuntu-latest
     steps:
       - name: github context object
         run: echo "${{toJSON(github)}}"
+  envinfo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: env context object
+        run: echo "${{toJSON(env)}}"
