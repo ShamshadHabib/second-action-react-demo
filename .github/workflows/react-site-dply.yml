@@ -16,7 +16,7 @@ jobs:
       - name: veriyf node version
         run: node -v
       - name: verify npm version
-        run: nmp -v 
+        run: npm -v 
       - name: Install npm dependencies 
         run: npm ci
       - name: Run tests
