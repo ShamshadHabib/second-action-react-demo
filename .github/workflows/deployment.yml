@@ -1,7 +1,7 @@
 name: Deploy React Project
 
 on: 
-  push:
+  [push, workflow_dispatch]:
     braches: 'master'
 jobs:
   test:
