@@ -1,8 +1,6 @@
 name: Deploy React Project
 
-on: 
-  [push, workflow_dispatch]:
-    braches: 'master'
+on: [push, workflow_dispatch]
 jobs:
   test:
     runs-on: ubuntu-latest
